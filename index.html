@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Zatti</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="/assets/js/main.js"></script>
+</head>
+
+<body>
+
+  <!-- Status fixo no canto superior esquerdo -->
+  <div class="status-top">
+    <img src="assets/img/status.gif" alt="Status" class="status-gif">
+    <span>Open to work</span>
+  </div>
+
+  <!-- Botão fixo no canto superior direito -->
+  <a href="assets/cv/Gustavo Zatti Dev.pdf" class="cv-button-top" target="_blank">Download CV</a>
+
+  <!-- Header e Footer dinâmicos -->
+  <div id="header"></div>
+
+  <nav class="main-nav">
+    <ul>
+      <li class="active"><a href="#home"><i class="fas fa-user"></i> Home</a></li>
+      <li><a href="#summary"><i class="fas fa-briefcase"></i> Summary</a></li>
+      <li><a href="#experience"><i class="fas fa-file-alt"></i> Experience</a></li>
+      <li><a href="#skills"><i class="fas fa-bolt"></i> Skills</a></li>
+      <li><a href="#links"><i class="fas fa-link"></i> Links</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="subtitle">Front End Developer</p>
+      <h1 class="name">GUSTAVO ZATTI</h1>
+
+      <div class="contact-grid">
+        <div class="contact-icons">
+          <a href="mailto:devgustavozatti@gmail.com" class="icon" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://github.com/zatticode" class="icon" title="GitHub" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/gustavozatti" class="icon" title="LinkedIn" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://instagram.com/gustavozatti.png" class="icon" title="Instagram" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="summary" class="section summary-section">
+    <div class="container">
+      <h2 class="section-title">Summary</h2>
+      <p class="summary-paragraph">
+        Desenvolvedor Front-End com experiência prática em projetos reais, focado em entregar soluções funcionais, responsivas e com excelente usabilidade. Atuo com tecnologias modernas como HTML, CSS, JavaScript, jQuery, React, Node.js e bancos de dados MySQL, sempre com atenção especial à performance e ao design centrado no usuário.
+      </p>
+      </p>
+      <p class="summary-paragraph">
+        Participei de iniciativas de impacto como o projeto Falcão 12 da Polícia Militar (BPMOA), contribuindo com funcionalidades de rastreamento e geolocalização em tempo real, integração com mapas táticos e exportação de dados para ferramentas como ATAK e WinTAK. Além disso, desenvolvi e publiquei o site da empresa Zatti Ambientes Planejados, melhorando sua presença digital.
+      </p>
+
+      <div class="summary-highlight">
+        <p>
+          Busco oportunidades onde eu possa aplicar<br>
+          minha paixão por código limpo e acessível,<br>
+          aliando minha formação técnica com design,<br>
+          usabilidade e foco total no usuário final.<br>
+          Estou sempre evoluindo, aprendendo<br>
+          novas tecnologias e criando experiências<br>
+          cada vez mais intuitivas e eficientes.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="experience-section">
+    <div class="container">
+      <h2 class="section-title">Work Experience</h2>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-header">
+            <h2 class="title-experience">Desenvolvedor Front End</h2>
+            <span class="experience-date">Dez 2024 – Atual</span>
+          </div>
+          <p>
+            Responsável pelo desenvolvimento completo do site institucional da empresa, desde a estruturação do layout até otimizações de SEO e publicação com domínio próprio.
+          </p>
+
+          <div class="project-card">
+            <a href="https://zattiambientes.com.br" target="_blank">
+              <img src="assets/img/zatti.png" alt="Projeto Zatti Site">
+              <div class="project-info">
+                <span class="project-icon"><i class="fas fa-arrow-up-right-from-square"></i></span>
+                <h3>Website</h3>
+                <p>Portfólio da empresa</p>
+              </div>
+            </a>
+          </div>
+
+          <p>- Desenvolvimento com HTML, CSS, JavaScript e SEO básico</p>
+          <p>- Estruturação do layout responsivo</p>
+          <p>- Otimização para indexação no Google</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-header">
+            <h2 class="title-experience">Desenvolvedor Front End</h2>
+            <span class="experience-date">Jun 2024 – Dez 2024</span>
+          </div>
+          <h1 class="company-name">HELISUL ENGENHARIA / BPMOA</h1>
+          <p>
+            Atuação no Projeto Falcão 12 da Polícia Militar, desenvolvendo funcionalidades de rastreamento em tempo real, integração com mapas táticos e exportação de dados para ferramentas como ATAK e WinTAK.
+          </p>
+          <div class="project-card">
+            <a href="https://www.parana.pr.gov.br/aen/Noticia/Projeto-Falcao-da-PMPR-completa-um-ano-com-quase-mil-missoes-policiais" target="_blank">
+              <img src="assets/img/helisul.jpg" alt="Projeto Falcão 12">
+              <div class="project-info">
+                <span class="project-icon"><i class="fas fa-arrow-up-right-from-square"></i></span>
+                <h3>Projeto Falcão 12</h3>
+                <p>Missões da Polícia Militar (BPMOA)</p>
+              </div>
+            </a>
+          </div>
+
+          <p>- Implementação de geolocalização em tempo real</p>
+          <p>- Integração com mapas táticos e plataformas externas</p>
+          <p>- Participação ativa no planejamento técnico do sistema</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-header">
+            <h2 class="title-experience">Desenvolvedor Front End</h2>
+            <span class="experience-date">Fev 2023 – Jun 2024</span>
+          </div>
+          <h1 class="company-name">ZATTI AMBIENTES PLANEJADOS</h1>
+          <p>
+            Suporte técnico interno, manutenção de computadores e redes, além de auxiliar em tarefas digitais da empresa como criação de materiais gráficos e gestão de sistemas.
+          </p>
+
+          <p>- Manutenção de equipamentos e redes</p>
+          <p>- Suporte técnico para colaboradores</p>
+          <p>- Apoio em sistemas, design e digitalização de processos</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div id="footer"></div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
