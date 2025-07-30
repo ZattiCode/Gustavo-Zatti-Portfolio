@@ -41,18 +41,18 @@ main, .container, section, .hero-content {
   z-index: 1;
   text-align: left;
   padding-left: 80px;
-  max-width: 600px;
+  max-width: 900px;
 }
 
 .subtitle {
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 600;
   color: #facc15;
-  margin-bottom: 8px;
+  margin-bottom: -70px;
 }
 
 .name {
-  font-size: 72px;
+  font-size: 100px;
   font-weight: 800;
   line-height: 1.1;
   margin-bottom: 30px;
@@ -70,6 +70,25 @@ main, .container, section, .hero-content {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+@media (max-width: 480px) {
+  .hero-content {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
+  }
+
+  .name {
+    font-size: 36px;
+    word-break: break-word;
+  }
+
+  .contact-icons {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -118,6 +137,37 @@ main, .container, section, .hero-content {
 
 /*BUTTON CV TOP END*/
 
+@media (max-width: 580px) {
+  .cv-button-top {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+  }
+
+  .status-top {
+    left: 50%;
+    right: auto;
+    margin-top: 120px;
+    justify-content: center;
+    padding: 0px 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cv-button-top {
+    right: 16px;
+    padding: 10px 18px;
+    font-size: 12px;
+  }
+
+  .status-top {
+    left: 16px;
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
+
+
 /*STATUS OPEN TO WORK START*/
 .status-top {
   position: absolute;
@@ -138,6 +188,7 @@ main, .container, section, .hero-content {
   width: 16px;
   height: 16px;
 }
+
 /*STATUS OPEN TO WORK END*/
 
 
@@ -149,8 +200,8 @@ main, .container, section, .hero-content {
 }
 
 .icon {
-  width: 52px;
-  height: 52px;
+  width: 70px;
+  height: 70px;
   background-color: rgba(255, 255, 255, 0.08);
   border-radius: 50%;
   color: #fff;
@@ -169,6 +220,13 @@ main, .container, section, .hero-content {
   transform: translateY(-3px) scale(1.1);
   box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
+
+@media (max-width: 480px) {
+  .contact-icons {
+    justify-content: center;
+  }
+  }
+
 /*CONTACT ICONS END*/
 
 /*MAIN NAV START*/
@@ -225,6 +283,19 @@ main, .container, section, .hero-content {
   }
 }
 
+@media (max-width: 375px) {
+  .main-nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .main-nav li a {
+    padding: 6px 8px;
+    font-size: 11px;
+  }
+}
+
+
 /*MAIN NAV END*/
 
 /*SUMMARY START*/
@@ -257,6 +328,7 @@ main, .container, section, .hero-content {
   margin-bottom: 20px;
   color: #f0f0f0;
   max-width: 800px;
+  text-align: justify;
 }
 
 .summary-highlight {
@@ -271,6 +343,7 @@ main, .container, section, .hero-content {
   font-weight: 700;
   line-height: 1.6;
   color: white;
+  text-align: justify;
 }
 
 @media (max-width: 768px) {
@@ -315,6 +388,10 @@ main, .container, section, .hero-content {
   padding-left: 80px;
   position: relative;
   z-index: 1;
+}
+
+.experience-section p {
+  font-size: 16px;
 }
 
 .timeline {
@@ -459,7 +536,7 @@ main, .container, section, .hero-content {
   }
 
   .experience-section .container {
-    padding-left: 0 16px;
+    padding-left: 6px;
   }
 
   .timeline {
@@ -498,8 +575,8 @@ main, .container, section, .hero-content {
   }
 
   .project-card {
-    width: auto;
-    height: auto;
+    width: 80%;
+    height: 60%;
     aspect-ratio: 4 / 3;
     margin-top: 20px;
   }
@@ -533,5 +610,185 @@ main, .container, section, .hero-content {
 
 /*EXPERIENCE END*/
 
+/*SKILL & TOOLS START*/
+
+/* SKILLS & TOOLS */
+
+.skills-section {
+  padding: 100px 80px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+
+.skills-section .container {
+  padding: 100px 80px;
+}
+
+.skills-container {
+  max-width: 800px;
+  padding-left: 80px;
+  position: relative;
+  z-index: 1;
+}
+
+.skills-columns {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 40px;
+}
+
+.skills-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 16px;
+  color: #fff;
+  line-height: 2;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(80px, 1fr));
+  gap: 20px;
+  margin-top: 60px;
+  justify-items: center;
+}
+
+.skill-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+}
+
+.skill-icon span{
+  font-family: 'Poppins', Arial, sans-serif;
+
+}
+
+.skill-icon i {
+  font-size: 50px;
+  margin-bottom: 8px;
+  transition: transform 0.3s ease;
+}
+
+.skill-icon i:hover {
+  transform: scale(1.2);
+  color: #facc15;
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+  .skills-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skill-icon i {
+    font-size: 26px;
+  }
+}
+
+/*SKILL & TOOLS END*/
+
+.languages-section, .education-section, .links-section {
+  padding: 100px 80px;
+  color: white;
+}
+
+.language {
+  margin-bottom: 20px;
+}
+
+.language span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.bar {
+  background-color: #333;
+  border-radius: 5px;
+  height: 16px;
+  width: 600px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background-color: #facc15;
+  transition: width 1s ease;
+}
+
+.education-item {
+  margin-bottom: 30px;
+}
+
+.edu-title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.edu-subtitle {
+  font-size: 14px;
+  color: #facc15;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.social-icons a {
+  font-size: 26px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #facc15;
+}
+
+.contact-info p {
+  font-size: 16px;
+  margin: 6px 0;
+}
+
+.footer-note {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+@media (max-width: 768px) {
+  .languages-section, .education-section, .links-section {
+    padding: 60px 20px;
+  }
+
+  .social-icons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .footer-note {
+    text-align: center;
+  }
+}
 
 /*teste*/
