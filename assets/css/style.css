@@ -918,3 +918,16 @@ main, .container, section, .hero-content {
   }
 }
 /*teste*/
+
+.flag-orb-img {
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.language-icon:hover .flag-orb-img {
+  transform: scale(1.1);
+}
