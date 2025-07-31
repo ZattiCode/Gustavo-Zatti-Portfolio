@@ -139,44 +139,44 @@ main, .container, section, .hero-content {
 
 @media (max-width: 580px) {
   .cv-button-top {
-    left: 50%;
-    right: auto;
-    width: 100px;
-    text-align: justify;
-    transform: translateX(-50%);
+    position: fixed;
+    top: 50px;
+    right: 30px;
+    left: auto;
+    transform: none;
+    width: auto;
+    padding: 10px 16px;
+    font-size: 12px;
+    z-index: 1000;
   }
 
   .status-top {
-    left: 50%;
-    right: auto;
-    margin-top: 120px;
-    justify-content: center;
-    padding: 0px 0px;
-  }
-}
-
-@media (max-width: 480px) {
-  .cv-button-top {
-    right: 16px;
-    padding: 10px 18px;
+    position: fixed;
+    margin-left: -120px;
+    gap: 8px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
     font-size: 12px;
+    z-index: 1000;
   }
 
-  .status-top {
-    left: 16px;
-    padding: 6px 10px;
+  .status-gif {
+    width: 12px;
+    height: 12px;
+  }
+
+  .status-top span {
     font-size: 12px;
   }
 }
-
 
 /*STATUS OPEN TO WORK START*/
 .status-top {
-  position: absolute;
+  position: fixed;
   top: 50px;
   left: 130px;
   display: flex;
-  align-items: center;
+  align-items: start;
   gap: 10px;
   padding: 8px 14px;
   z-index: 999;
@@ -242,7 +242,6 @@ main, .container, section, .hero-content {
 
 .main-nav ul {
   background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(12px);
   display: flex;
   padding: 10px 20px;
   border-radius: 50px;
@@ -272,19 +271,17 @@ main, .container, section, .hero-content {
   color: #000;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 786px) {
   .main-nav {
     position: fixed;
     bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #111111;
     padding: 6px 12px;
+    display: flex;
+    align-self: start;
     border-radius: 30px;
     z-index: 9999;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
-    width: auto;
-    max-width: 95%;
+    width: 500px;
+    max-width: 100%;
   }
 
   .main-nav ul {
@@ -314,13 +311,52 @@ main, .container, section, .hero-content {
   }
 }
 
+@media (max-width: 500px) {
+  .main-nav {
+    position: fixed;
+    bottom: 20px;
+    transform: translateX(-50%);
+    padding: 3px 6px;
+    border-radius: 30px;
+    z-index: 9999;
+    width: auto;
+    max-width: 100%;
+  }
+
+  .main-nav ul {
+    display: flex;
+    justify-content: justify;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 1px;
+    overflow-x: auto;
+    width: 100%;
+    scrollbar-width: none;
+  }
+
+  .main-nav ul::-webkit-scrollbar {
+    display: none;
+  }
+
+  .main-nav li {
+    flex: 0 0 auto;
+  }
+
+  .main-nav li a {
+    font-size: 9px;
+    padding: 6px 10px;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+}
+
 @media (max-width: 375px) {
   .main-nav ul {
     flex-wrap: nowrap;
   }
 
   .main-nav li a {
-    font-size: 11px;
+    font-size: 9px;
     padding: 6px 8px;
   }
 }
@@ -605,8 +641,8 @@ main, .container, section, .hero-content {
   }
 
   .project-card {
-    width: 80%;
-    height: 60%;
+    width: 50%;
+    height: 30%;
     aspect-ratio: 4 / 3;
     margin-top: 20px;
   }
@@ -807,7 +843,7 @@ main, .container, section, .hero-content {
   .skills-section {
     padding: 60px 20px;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
   }
 
   .skills-section .container {
@@ -817,7 +853,7 @@ main, .container, section, .hero-content {
   .skills-columns {
     flex-direction: column;
     gap: 20px;
-    align-items: center;
+    align-items: start;
   }
 
   .skills-list {
@@ -826,7 +862,7 @@ main, .container, section, .hero-content {
   }
 
   .skills-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 16px;
   }
 
@@ -850,7 +886,11 @@ main, .container, section, .hero-content {
 
 @media (max-width: 480px) {
   .skills-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .skills-section {
+    left: -10px;
   }
 
   .skill-icon i {
