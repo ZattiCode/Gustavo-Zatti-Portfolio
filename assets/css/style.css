@@ -1,9 +1,9 @@
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', 'Inter', Arial, Helvetica, sans-serif;
   background: 
     linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.4)),
-    url('../img/bg-hero.jpg') no-repeat center center;
+    url('../img/417c1eee-3902-4ea4-abff-f96c24a150e9.png') no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
