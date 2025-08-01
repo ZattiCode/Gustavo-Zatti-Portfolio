@@ -759,8 +759,13 @@ main, .container, section, .hero-content {
 
 
 .languages-section, .education-section, .links-section {
-  padding: 100px 80px;
-  color: white;
+padding-left: 80px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 5vh;
+  left: 80px;
 }
 
 .language {
@@ -847,9 +852,10 @@ main, .container, section, .hero-content {
 
 @media (max-width: 768px) {
   .skills-section {
-    padding: 60px 20px;
+    padding-left: 80px;
     flex-direction: column;
     align-items: start;
+    left: -80px;
   }
 
   .skills-section .container {
@@ -857,6 +863,7 @@ main, .container, section, .hero-content {
   }
 
   .skills-columns {
+    padding: 0;
     flex-direction: column;
     gap: 20px;
     align-items: start;
@@ -874,6 +881,11 @@ main, .container, section, .hero-content {
 
   .skill-icon span {
     font-size: 13px;
+  }
+
+  .languages-section, .education-section, .links-section {
+    padding-left: 80px;
+    left: -60px;
   }
 
   .languages-section .bar,
@@ -912,7 +924,8 @@ main, .container, section, .hero-content {
   }
 
   .languages-section, .education-section, .links-section {
-    padding: 40px 16px;
+    padding: 10px 16px;
+    margin-left: 10px;
   }
 
   .social-icons {
