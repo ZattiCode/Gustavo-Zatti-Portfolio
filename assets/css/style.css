@@ -30,7 +30,7 @@ main, .container, section, .hero-content {
 .hero {
   min-height: 100vh;
   display: flex;
-  align-items: center; /* só vertical */
+  align-items: center; 
   padding: 40px 80px;
   position: relative;
 }
@@ -384,7 +384,7 @@ main, .container, section, .hero-content {
 .section-title {
   font-size: 48px;
   font-weight: 700;
-  color: #ffc107; /* amarelo vibrante */
+  color: #ffc107; 
   margin-bottom: 30px;
 }
 
@@ -401,11 +401,11 @@ main, .container, section, .hero-content {
   border-left: 4px solid #ffc107;
   padding-left: 20px;
   margin-top: 40px;
-  max-width: 700px;
+  max-width: 1000px;
 }
 
 .summary-highlight p {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1.6;
   color: white;
@@ -612,7 +612,7 @@ main, .container, section, .hero-content {
   }
 
   .timeline-dot {
-    display: none; /* remove o ponto em telas pequenas para simplificar */
+    display: none; 
   }
 
   .timeline-header {
