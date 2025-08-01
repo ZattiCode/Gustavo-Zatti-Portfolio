@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll(".main-nav li a");
 
   function onScroll() {
-    const scrollPos = window.scrollY + 100;
+    const scrollPos = window.scrollY + 440;
 
     sections.forEach((section) => {
       if (
