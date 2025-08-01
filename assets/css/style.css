@@ -28,11 +28,13 @@ main, .container, section, .hero-content {
 
 /*HERO START*/
 .hero {
-  min-height: 100vh;
+  min-height: 60vh;
   display: flex;
   align-items: center; 
   padding: 40px 80px;
   position: relative;
+  margin-top: 150px;
+  margin-bottom: 100px;
 }
 
 
@@ -371,7 +373,7 @@ main, .container, section, .hero-content {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  min-height: 100vh;
+  min-height: 60vh;
 }
 
 .summary-section .container {
@@ -416,6 +418,7 @@ main, .container, section, .hero-content {
   .summary-section,
   .experience-section {
     padding: 80px 20px;
+    margin-bottom: 100px;
   }
 
   .summary-section .container,
@@ -441,12 +444,13 @@ main, .container, section, .hero-content {
 /*EXPERIENCE START*/
 
 .experience-section {
+  margin-top: 100px;
   padding: 100px 80px;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  min-height: 100vh;
+  min-height: 50vh;
 }
 
 .experience-section .container {
@@ -687,7 +691,7 @@ main, .container, section, .hero-content {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  min-height: 100vh;
+  min-height: 50vh;
 }
 
 .skills-section .container {
@@ -908,7 +912,7 @@ padding-left: 80px;
   }
 
   .skills-section {
-    left: -10px;
+    left: -80px;
   }
 
   .skill-icon i {
@@ -924,8 +928,6 @@ padding-left: 80px;
   }
 
   .languages-section, .education-section, .links-section {
-    padding: 10px 16px;
-    margin-left: 10px;
   }
 
   .social-icons {
